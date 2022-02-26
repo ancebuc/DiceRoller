@@ -20,8 +20,15 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
+
+        //dado 1
         val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
+
+        //dado 2
+        val dice2 = Dice(6)
+        val resultTextView2 :TextView = findViewById(R.id.textView2)
+        resultTextView2.text = dice2.roll().toString()
     }
 }
 
